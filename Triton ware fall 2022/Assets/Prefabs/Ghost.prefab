@@ -11,9 +11,10 @@ GameObject:
   - component: {fileID: 2912689074736758725}
   - component: {fileID: 2912689074736758778}
   - component: {fileID: -778591578112952267}
+  - component: {fileID: 8330400846641609531}
   m_Layer: 0
   m_Name: Ghost
-  m_TagString: Untagged
+  m_TagString: enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -71,8 +72,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 843803529
+  m_SortingLayer: 1
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 4f9ebc9d2d12806448aa8e4e61849127, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -97,4 +98,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 33a31e30a6790a640b2ce68d16ad2722, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ghostSpeed: 0.01
+  ghostSpeed: 0.08
+--- !u!58 &8330400846641609531
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2912689074736758779}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.13382316, y: -0.17099589}
+  serializedVersion: 2
+  m_Radius: 1.1840748

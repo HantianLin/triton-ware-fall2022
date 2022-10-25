@@ -26,7 +26,7 @@ public class ghostspawner : MonoBehaviour
         if (timeCounter >= timeDelay)
         {
             //Spawn ghost
-            Instantiate(ghost, startingLocations[Random.Range(0, 4)], Quaternion.identity);
+            Instantiate(ghost, startingLocations[Random.Range(0, 5)], Quaternion.identity);
 
 
             numberOfGhostsSpawned++;

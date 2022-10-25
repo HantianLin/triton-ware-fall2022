@@ -16,6 +16,6 @@ public class ghostBrain : MonoBehaviour
     void FixedUpdate()
     {
         if (transform.position.x > -4.5f) transform.position = new Vector3(transform.position.x - ghostSpeed, transform.position.y, transform.position.z);
-        else Destroy(gameObject);
+        else { GameObject.Find("Health Text").GetComponent<health>().subtractHealth(1); Destroy(gameObject); }
     }
 }

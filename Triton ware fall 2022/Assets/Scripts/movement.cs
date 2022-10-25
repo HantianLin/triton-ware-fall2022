@@ -14,6 +14,15 @@ public class movement : MonoBehaviour
         
     }
 
+    void OnTriggerEnter2D(Collider2D collision)
+    {
+        Debug.Log("hello");
+        if (collision.gameObject.tag == "enemy")
+        {
+            Destroy(collision.gameObject);
+        }
+    }
+
     // Update is called once per frame
     void FixedUpdate()
     {
